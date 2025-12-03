@@ -1,4 +1,4 @@
-/* Reset & Base Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -15,8 +15,6 @@ body {
 html {
     scroll-behavior: smooth;
 }
-
-/* Hero Section */
 header#hero {
     position: relative;
     height: 100vh;
@@ -26,7 +24,6 @@ header#hero {
     overflow: hidden;
 }
 
-/* Video Background Styling */
 #video-background {
     position: absolute;
     top: 0;
@@ -35,18 +32,16 @@ header#hero {
     height: 100%;
     object-fit: cover;
     z-index: -1;
-    /* Darken the image so text pops */
     filter: brightness(0.4);
     background-color: #1a1a1a;
 }
 
-/* Navbar */
 .navbar {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1rem;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent */
+    background-color: rgba(0, 0, 0, 0.5); 
     backdrop-filter: blur(5px);
     position: relative;
     z-index: 10;
@@ -93,7 +88,6 @@ header#hero {
 
 .nav-links.open { display: flex; }
 
-/* Hero Content */
 .hero-content {
     flex: 1;
     display: flex;
@@ -126,7 +120,6 @@ header#hero {
     color: black;
 }
 
-/* Sections */
 section { padding: 4rem 2rem; }
 
 h2 {
@@ -137,7 +130,6 @@ h2 {
     position: relative;
 }
 
-/* Skills (Flexbox) */
 .skills-container {
     display: flex;
     justify-content: center;
@@ -157,7 +149,6 @@ h2 {
     border: 1px solid #eee;
 }
 
-/* Projects (Grid) */
 #projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -169,7 +160,7 @@ h2 {
 .project-card {
     background: white;
     border-radius: 12px;
-    overflow: hidden; /* Keeps image inside rounded corners */
+    overflow: hidden; 
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s;
     display: flex;
@@ -208,7 +199,6 @@ h2 {
 
 .project-card button:hover { background-color: #555; }
 
-/* Contact Form */
 #contact-form-id {
     max-width: 500px;
     margin: 0 auto;
@@ -264,7 +254,6 @@ footer {
     margin-top: 2rem;
 }
 
-/* Tablet & Desktop Styles */
 @media screen and (min-width: 768px) {
     .navbar {
         flex-direction: row; 
